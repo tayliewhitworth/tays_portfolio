@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    background: #FC5C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.1);
+}
+
+nav > h3 > a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding-left: 100px;
+    cursor: pointer;
+}
+
+.list-items {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 100px;
+}
+
+.list-items > h4 {
+    padding: 10px;
+}
+
+.list-items > h4 > a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.list-items > h4 > a:hover {
+    color: #6A82FB;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+header {
+    margin: 50px 200px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.line {
+    height: 3px;
+    background-color: #6A82FB;
+    width: 400px;
+}
+
+
+.social-media {
+    padding-left: 20px;
+}
+
+.social-media > a {
+    text-decoration: none;
+    color: #6A82FB;
+    font-size: 30px;
+    padding: 5px;
+    transition: ease-in-out;
+}
+
+.social-media > a > .fa-instagram:hover {
+    color: #FC5C7D;
+    transition: .5s ease-in-out;
+}
+
+.fa-linkedin:hover {
+    color: #0077b5;
+    transition: .5s ease-in-out;
+}
+
+.fa-github:hover {
+    color: #211F1F;
+    transition: all .5s ease-in-out;
+}
+
+.flex-container {
+    margin: 0 300px;
+}
+
+.intro {
+    font-size: 55px;
+}
+
+.purple {
+    color: #6A82FB;
+    transform: translateY(50);
+    transition: all 1s ease-in-out;
+}
+
+.main-sections {
+    margin: 50px 200px;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.computer-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.img-container {
+    position: relative;
+    text-align: center;
+}
+
+.img-txt {
+    position: absolute;
+    top: 430px;
+    left: 90px;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+.img-txt > a{
+    text-decoration: none;
+    color: #211F1F;
+}
+
+.img-txt > a:hover {
+    color: #6A82FB;
+    background: linear-gradient(to right, #6A82FB, #FC5C7D);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: none;
+    transition: all .5s ease-in-out;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.about-content > h2 {
+    color: #6A82FB;
+}
+
+.about-content > p {
+    padding-top: 20px;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 30px;
+    margin-right: 300px;
+}
+
+.skills {
+    margin-top: 100px;
+}
+
+.my-skills {
+    color: #6A82FB;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.skills-description {
+    margin: 20px 0;
+    color: rgba(0, 0, 0, 0.6);
+    margin-right: 300px;
+    line-height: 30px;
+}
+
+.skill-list {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    color: #6A82FB;
+    list-style-position: inside;
+    text-align: left;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.skill-items {
+    width: 100%;
+    line-height: 80px;
+    color: #6A82FB;
+    font-weight: bold;
+}
+
+.projects {
+    margin-top: 200px;
+}
+
+.project-title {
+    font-size: 40px;
+    color: #6A82FB;
+    margin-bottom: 20px;
+}
+
+.project-desc {
+    color: rgba(0, 0, 0, 0.6);
+    margin-right: 300px;
+    line-height: 30px;
+}
+
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
+}
+
+.project-card {
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 8px;
+    margin-top: 100px;
+    padding-bottom: 20px;
+}
+
+.card-title {
+    font-size: 25px;
+    color: #6A82FB;
+    margin: 10px;
+}
+
+.card-desc {
+    color: rgba(0, 0, 0, 0.6);
+    padding: 20px 5px;
+    line-height: 30px;
+}
+
+.card-link {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card-img:hover {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: .5s ease-in-out;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+    transition: .5s ease-in-out;
+    color: #6A82FB;
+}
+
+
+.contact {
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.contact-desc {
+    color: rgba(0, 0, 0, 0.6);
+    padding-bottom: 20px;
+    line-height: 30px;
+}
+
+.email {
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.email:hover {
+    text-decoration: underline;
+    color: #6A82FB;
+    background: linear-gradient(to right, #6A82FB, #FC5C7D);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.phone {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.fa-phone {
+    padding-right: 10px;
+}
+
+.footer {
+    background: #FC5C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6A82FB, #FC5C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer > h3 > a{
+    padding-left: 100px;
+    cursor: pointer;
+    color: whitesmoke;
+    text-decoration: none;
+}
